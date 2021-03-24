@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/iddownloadbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DownLoad File"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        >
+
+    </Button>
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/idprogressbardnn"
+        android:visibility="visible"
+        android:background="#000001"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:arc_progress="55"
+        app:arc_bottom_text="Download"
+        android:layout_margin="2dp"
+        app:arc_text_size="25sp"
+        app:arc_suffix_text_size="9sp"
+        app:arc_bottom_text_size="7sp"
+        app:arc_finished_color="@color/cardview_shadow_start_color"
+        app:arc_unfinished_color="@color/purple_200"
+        app:arc_text_color="#FCFFFF" />
+</androidx.appcompat.widget.LinearLayoutCompat>
